@@ -6,7 +6,6 @@ from .seralizers import UniversitetSeralizer
 
 # Create your views here.
 
-
 class UniversitetApiView(APIView):
 
     def get(self, request):
