@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # my apps
     'dars',
-
+    'dars2',
     # installed apps
     'rest_framework',
 ]
