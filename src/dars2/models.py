@@ -18,3 +18,16 @@ class TodoList(models.Model):
     
 # 5 minut
 # pip install django django-rest-framework 
+
+
+# seralizer, views, urls, test qilib 3 ta malumot qoshasizlar.
+
+class ExampleModel(models.Model):
+    name_uz = models.CharField(max_length=255)
+    name_ru = models.CharField(max_length=255)
+    is_active = models.BooleanField(default=True)
+    price = models.IntegerField(default=12)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.name_uz
