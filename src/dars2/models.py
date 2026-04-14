@@ -5,9 +5,9 @@ from django.db import models
 
 class TodoList(models.Model):
     class StatusChoices(models.TextChoices):
-        NEW = "yangi", "Yangi",
-        IN_PROGRESS = "jarayonda", "Jarayonda",
-        COMPLATED = "bajarilgan", "Bajarilgan",
+        NEW = "yangi", "Yangi"
+        IN_PROGRESS = "jarayonda", "Jarayonda"
+        COMPLATED = "bajarilgan", "Bajarilgan"
 
     title = models.CharField(max_length=255)
     is_active = models.BooleanField(default=True)
@@ -16,3 +16,5 @@ class TodoList(models.Model):
     def __str__(self):
         return self.title
     
+# 5 minut
+# pip install django django-rest-framework 
