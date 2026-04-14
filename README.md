@@ -3,7 +3,7 @@
 
 1. venv yaratish/active
 2. mkdir src
-3. pip install django, djagno-rest-framework, pillow
+3. pip install django django-rest-framework pillow
 4. pip freeze > requirements.txt
 5. cd src
 6. django-admin startproject config .

@@ -12,6 +12,7 @@ class Universitet(models.Model):
         return f"{self.name} | {self.is_active}"
 
 
+
 class Teacher(models.Model):
 
     name = models.CharField(max_length=255)
@@ -20,6 +21,8 @@ class Teacher(models.Model):
 
     def __str__(self):
         return f"{self.name} | {self.mutaxasislik}"
+    
+
     
 class Student(models.Model):
 
@@ -32,6 +35,7 @@ class Student(models.Model):
         return f"{self.name} | {self.age}"
     
 
+
 class Group(models.Model):
 
     name = models.CharField(max_length=255)
@@ -43,3 +47,4 @@ class Group(models.Model):
     def __str__(self):
         return f"{self.name} | {self.teacher.name}"
     
+
