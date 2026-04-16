@@ -3,7 +3,9 @@ from rest_framework.response import Response
 from rest_framework import status
 from .seralizers import TodoListSeralizer
 from .models import TodoList
-from rest_framework.generics import ListAPIView, ListCreateAPIView, RetrieveUpdateDestroyAPIView
+from rest_framework.generics import ListAPIView, ListCreateAPIView, RetrieveUpdateDestroyAPIView, \
+    DestroyAPIView, RetrieveAPIView, UpdateAPIView, CreateAPIView, RetrieveDestroyAPIView, \
+    RetrieveUpdateAPIView
 
 # Create your views here.
 
@@ -12,7 +14,7 @@ class TodoListApiView(ListCreateAPIView):
     queryset = TodoList.objects.all()
 
 
-class TodoDetailApiView(RetrieveUpdateDestroyAPIView):
+class TodoDetailApiView(RetrieveUpdateAPIView):
     serializer_class = TodoListSeralizer
     queryset = TodoList.objects.all()
 
